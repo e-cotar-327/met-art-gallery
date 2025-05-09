@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Met Art Gallery</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Metropolitan Museum Art Gallery</h1>
+        <p>
+          Explore the collection of artworks from the Metropolitan Museum of Art
+        </p>
+      </header>
+
+      <div class="search-container">
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Search by keyword (e.g., impressionist, landscape, portrait)" />
+        <button class="search-btn">Search</button>
+      </div>
+
+      <div class="loading">Loading collection data...</div>
+      <div class="error-message"></div>
+
+      <div class="gallery"></div>
+
+      <div class="pagination">
+        <button class="page-btn prev-btn" disabled>Previous</button>
+        <button class="page-btn next-btn">Next</button>
+      </div>
+    </div>
+
+    <div class="modal">
+      <span class="close-modal">&times;</span>
+      <div class="modal-content">
+        <img class="modal-image" src="" alt="Artwork" />
+        <div class="modal-details">
+          <h2 class="modal-title"></h2>
+          <p class="modal-artist"></p>
+          <div class="modal-info"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
