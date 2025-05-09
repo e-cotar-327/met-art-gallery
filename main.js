@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Functions
   function initializeGallery() {
     // Start with highlighted paintings
-    currentSearchTerm = "sunflower";
+    currentSearchTerm = "van gogh";
     fetchSearchResults(currentSearchTerm);
   }
 
